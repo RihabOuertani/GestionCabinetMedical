@@ -1,0 +1,41 @@
+package com.pfa.gestion.exception;
+
+public enum ErrorCodes {
+
+    PATIENT_NOT_FOUND(1000),
+    PATIENT_NOT_VALID(1001),
+    USERNAME_NOT_FOUND(2000),
+    USERNAME_NOT_VALID(2001),
+    PASSWORD_NOT_FOUND(3000),
+    PASSWORD_NOT_VALID(3001),
+    DOSSIER_NOT_FOUND(4000),
+    DOSSIER_NOT_VALID(4001),
+    MEDECIN_NOT_FOUND(5000),
+    MEDECIN_NOT_VALID(5001),
+    ORDONNANCE_NOT_FOUND(6000),
+    ORDONNANCE_NOT_VALID(6001),
+    SECRETAIRE_QUIZ_NOT_FOUND(7000),
+    SECRETAIRE_QUIZ_NOT_VALID(7001),
+    RDV_FOUND(8000),
+    RDV_NOT_VALID(8001),
+    SPECIALITE_NOT_FOUND(9000),
+    SPECIALITE_NOT_VALID(9001),
+    FACTURE_NOT_FOUND(10000),
+    FACTURE_NOT_VALID(10001),
+    COMPTE_FOUND(11000),
+    COMPTE_NOT_VALID(11001),
+    CONSULTATION_NOT_FOUND(12000),
+    CONSULTATION_NOT_VALID(12001);
+
+
+
+    private int code;
+
+    private ErrorCodes(int code) {
+        this.code = code;
+    }
+
+    public int getCode() {
+        return code;
+    }
+}
